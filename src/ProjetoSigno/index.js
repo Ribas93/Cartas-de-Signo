@@ -43,7 +43,8 @@ const Cards = () => {
                         <h4 style={style}>{sig.data}</h4>
                     </div>
                     <div id="back" className="card">
-                        <h4 style={{padding:'0px', margin:'0px'}}>Ola eu sou de Aquario</h4>
+                        <h4 style={{padding:'0px', margin:'0px'}}>{sig.nome}</h4>
+                        <p>{sig.descricao}</p>
                     </div>
                 </div>
                 )
