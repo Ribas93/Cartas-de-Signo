@@ -1,13 +1,12 @@
 import React, {useState} from "react";
-import Cards from "./ProjetoSigno/Cards";
-import ListaProdutos from "./ProjetoListaMercado/ListaProdutos";
+import Cards from "./ProjetoSigno";
+
 
 const App = () => {
     
     return(
         <>
         <Cards/>
-        <ListaProdutos/>
         </>
     )
 }

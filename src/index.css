@@ -15,16 +15,32 @@ button:hover{
   cursor: pointer;
 }
 
-#cards {
+.card{
     background-color: green;
-    padding: 20px 10px;
     border-radius: 10px;
+    width: 145px;
+    height: 220px;
     border: none;
-    display: inline-block;
-    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 0px;
+    
+    
 }
 
-#cards:hover{
-  background-color:aqua;
-  cursor: pointer;
+#cards{
+  margin: 20px
 }
+
+
+
+#back{
+  transform: rotateY(180deg)
+}
+
+
+
+
+
