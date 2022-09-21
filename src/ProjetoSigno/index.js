@@ -10,9 +10,9 @@ const Cards = () => {
             <h3 className="titulo">Baralho de Signos</h3>
             <div className="cards_div">
                 {signo.map((sig) => { return(
-                    <div id="cards" className="cards" >
+                    <div className="cards" >
                         <div className="flip">
-                            <div key={`${signo.length}`}  className="card_front">
+                            <div key={`${sig.nome}`}  className="card_front">
                                 <h4 className="card_front_titulo">{sig.nome} </h4>
                                 <img className="card_front_img" src={sig.img} />
                                 <h4 className="card_front_data">{sig.data}</h4>
