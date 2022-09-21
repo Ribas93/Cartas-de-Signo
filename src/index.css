@@ -6,8 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   background-color: grey;
 }
 
@@ -17,55 +16,103 @@ button:hover{
 
 .titulo{
  
-  margin-top:20px;
-  margin-bottom: 15px;
+  margin-top:40px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 750;
+  font-size: 22px;
+  
+}
+
+
+.cards_div{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 10px;
+  
+}
+
+
+
+.cards{
+  margin: 15px 11px;
+  width: 160px;
+  height: 230px;
+  background-color: transparent;
+  perspective: 5000px;
+}
+
+.flip{
+  
+  transition: 0.6s;
+  transform-style:preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 25px 1px rgba(3, 249, 40,0.2);
+}
+
+.cards:hover .flip{
+  transform: rotateY(180deg);
+}
+
+
+.card_front, .card_back{
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: green;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card_front{
   text-align: center;
 }
 
-.card{
-    background-color: green;
-    border-radius: 10px;
-    width: 145px;
-    height: 220px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    margin: 0px;
-}
-
-.cards_div{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
+.card_back{
+  transform: rotateY(180deg);
+  
 }
 
 
-.titulo{
- 
-    margin-top:20px;
-    margin-bottom: 15px;
-    text-align: center;
-
+.card_front_titulo{
+  text-align: center;
+  margin:8px 0px -6px ;
 }
 
 .card_front_img{
-    width: 130px;
+    width: 140px;
     border-radius:4px;
-    margin-top:8px;
+    margin-top:15px;
     margin-bottom: 12px;
 }
 
-.card_front_margin{
+.card_front_data{
     text-align: center;
     margin: 0px;
 }
 
+
 .card_back_titulo{
   padding: 0px; 
-  margin: 0px;
+  margin: 8px 0px 5px;
+  text-align: center;
+}
+
+.card_back_p{
+  margin: 8px 10px 8px;
+  line-height: 1.2;
+  text-align: left;
+  word-spacing: 0px;
+
 }
 
 

@@ -16,8 +16,9 @@ const data = [
     nome: 'Aquàrio',
     img: aquario,
     data: '20/01 - 18/02',
-    descricao: 'O aquariano é um ser independente, que preza muito por sua liberdade. Ele gosta de conhecer coisas novas, como também pessoas novas.'
+    descricao: `O aquariano é um ser independente que preza muito por sua liberdade.Ele gosta de conhecer coisas novas, como também pessoas novas.`
 },
+
 {
     nome: 'Peixes',
     img: peixes,
